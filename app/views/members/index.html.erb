@@ -1,0 +1,15 @@
+<h1>Members</h1>
+
+<div class="row">
+  <% @members.each do |member| %>
+  <div class="col-3">
+    <%= image_tag member.image.thumb, class: "img-fluid" %>
+    <p>
+      <%= member.bio %>
+    </p>
+  </div>
+  <% end %>
+</div>
+
+
+<%= link_to 'New Member', new_member_path %>

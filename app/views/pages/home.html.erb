@@ -1,0 +1,36 @@
+<body style = "background-color:lightgrey;">
+  <h1 style="font-family:broadway;">
+    Les Claviers
+  </h1>
+  <p style="font-family:Times New Roman;">
+    라클홈페이지
+  </p>
+    <div id="lcCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#lcCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#lcCarousel" data-slide-to="1"></li>
+        <li data-target="#lcCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <%= image_tag "caro1.jpg", class: "d-block w-100"%>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag "caro4.jpg", class: "d-block w-100"%>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag "caro5.jpg", class: "d-block w-100"%>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#lcCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#lcCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+</body>
